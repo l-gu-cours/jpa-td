@@ -20,6 +20,9 @@ public class TestAuthorService {
 		EntityManager em = emf.createEntityManager(); 
 		
 		System.out.println("----------");
+		System.out.println("EntityManager class : " + em.getClass().getCanonicalName() );
+		
+		System.out.println("----------");
 
 		AuthorService service = new AuthorService(em);
 		
